@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3206E885286CA6B3007F950A /* MedicalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3206E884286CA6B3007F950A /* MedicalInfoViewController.swift */; };
+		3206E887286CA869007F950A /* PeriodHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3206E886286CA869007F950A /* PeriodHelpViewController.swift */; };
+		3206E889286CA87C007F950A /* LocalResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3206E888286CA87C007F950A /* LocalResourcesViewController.swift */; };
+		3206E88B286CA891007F950A /* SymptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3206E88A286CA891007F950A /* SymptomsViewController.swift */; };
+		3206E88D286CA89F007F950A /* HotlinesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3206E88C286CA89F007F950A /* HotlinesViewController.swift */; };
 		32E768B7286B8B1400DF00E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E768B6286B8B1400DF00E5 /* AppDelegate.swift */; };
 		32E768B9286B8B1400DF00E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E768B8286B8B1400DF00E5 /* SceneDelegate.swift */; };
 		32E768BB286B8B1400DF00E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E768BA286B8B1400DF00E5 /* ViewController.swift */; };
@@ -37,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3206E884286CA6B3007F950A /* MedicalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalInfoViewController.swift; sourceTree = "<group>"; };
+		3206E886286CA869007F950A /* PeriodHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodHelpViewController.swift; sourceTree = "<group>"; };
+		3206E888286CA87C007F950A /* LocalResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalResourcesViewController.swift; sourceTree = "<group>"; };
+		3206E88A286CA891007F950A /* SymptomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymptomsViewController.swift; sourceTree = "<group>"; };
+		3206E88C286CA89F007F950A /* HotlinesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotlinesViewController.swift; sourceTree = "<group>"; };
 		32E768B3286B8B1400DF00E5 /* Spot-It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spot-It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		32E768B6286B8B1400DF00E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32E768B8286B8B1400DF00E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +114,11 @@
 				32E768B6286B8B1400DF00E5 /* AppDelegate.swift */,
 				32E768B8286B8B1400DF00E5 /* SceneDelegate.swift */,
 				32E768BA286B8B1400DF00E5 /* ViewController.swift */,
+				3206E884286CA6B3007F950A /* MedicalInfoViewController.swift */,
+				3206E88C286CA89F007F950A /* HotlinesViewController.swift */,
+				3206E88A286CA891007F950A /* SymptomsViewController.swift */,
+				3206E888286CA87C007F950A /* LocalResourcesViewController.swift */,
+				3206E886286CA869007F950A /* PeriodHelpViewController.swift */,
 				32E768BC286B8B1400DF00E5 /* Main.storyboard */,
 				32E768C2286B8B1600DF00E5 /* Assets.xcassets */,
 				32E768C4286B8B1600DF00E5 /* LaunchScreen.storyboard */,
@@ -261,10 +276,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3206E88D286CA89F007F950A /* HotlinesViewController.swift in Sources */,
 				32E768BB286B8B1400DF00E5 /* ViewController.swift in Sources */,
+				3206E885286CA6B3007F950A /* MedicalInfoViewController.swift in Sources */,
+				3206E88B286CA891007F950A /* SymptomsViewController.swift in Sources */,
 				32E768B7286B8B1400DF00E5 /* AppDelegate.swift in Sources */,
 				32E768C1286B8B1400DF00E5 /* Spot_It.xcdatamodeld in Sources */,
+				3206E887286CA869007F950A /* PeriodHelpViewController.swift in Sources */,
 				32E768B9286B8B1400DF00E5 /* SceneDelegate.swift in Sources */,
+				3206E889286CA87C007F950A /* LocalResourcesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
