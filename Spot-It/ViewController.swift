@@ -20,7 +20,3 @@ class ViewController: UIViewController {
 
 
 }
-
-class food {
-    var apple = "yum"
-}
