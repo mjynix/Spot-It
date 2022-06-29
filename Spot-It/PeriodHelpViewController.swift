@@ -9,6 +9,8 @@ import UIKit
 
 class PeriodHelpViewController: UIViewController {
 
+    @IBOutlet weak var cycleInfo: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
