@@ -181,10 +181,10 @@
             </objects>
             <point key="canvasLocation" x="1186" y="1584"/>
         </scene>
-        <!--View Controller-->
+        <!--Maps View Controller-->
         <scene sceneID="EFO-S7-q81">
             <objects>
-                <viewController id="wQb-GX-fvu" sceneMemberID="viewController">
+                <viewController id="wQb-GX-fvu" customClass="MapsViewController" customModule="Spot_It" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ous-gF-u3W">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
