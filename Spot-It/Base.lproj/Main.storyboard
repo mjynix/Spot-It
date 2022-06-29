@@ -154,32 +154,24 @@
             <objects>
                 <viewController id="cKx-Z1-smC" customClass="PeriodHelpViewController" customModule="Spot_It" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YVD-gU-qQI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1146"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1346"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UNe-s4-oYt">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1356"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8tX-ye-xjg">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                        <rect key="frame" x="0.0" y="-54" width="414" height="1390"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KHp-51-yK9">
                                                 <rect key="frame" x="87" y="62" width="240" height="128"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4z-85-YNi">
-                                                <rect key="frame" x="60" y="239" width="42" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="200" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEP-zm-rPp">
+                                                <rect key="frame" x="32" y="145" width="351" height="1297"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c5k-ih-XZc">
-                                                <rect key="frame" x="60" y="311" width="290" height="985.5"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <mutableString key="text">The sequence of events that take place within your body as it gets ready each month for the potential of pregnancy is known as the menstrual cycle. The first day of a period is regarded as the start of a menstrual cycle. Although a cycle can be anywhere from 21 and 35 days in length, the typical cycle is 28 days long.
 
 The peaks and valleys of hormone-related substances in your body cause the phases of the menstrual cycle. During your menstrual cycle, your ovaries and pituitary gland in your brain produce and release specific hormones at specific intervals that affect how your reproductive tract's organs react.
@@ -192,10 +184,10 @@ The follicular phase: Normally, this period lasts from days six to fourteen. The
 Ovulation: In a 28-day menstrual cycle, this phase usually takes place on day 14 or so. Your ovary releases an egg when the level of another hormone, luteinizing hormone, suddenly rises. This process is known as ovulation.
 
 Luteinizing phase: This stage lasts for approximately 15 to 28 days. The egg leaves your ovary and starts its journey through your fallopian tubes to reach your uterus. To aid in preparing your uterine lining for pregnancy, progesterone levels increase. You become pregnant if the egg is fertilised by a sperm and adheres to the uterine wall. In the absence of pregnancy, oestrogen and progesterone levels fall, and your uterus's thicker lining sheds during each menstrual cycle.</mutableString>
-                                                <color key="textColor" systemColor="labelColor"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                            </textView>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
@@ -208,9 +200,9 @@ Luteinizing phase: This stage lasts for approximately 15 to 28 days. The egg lea
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="LrJ-fB-J0t"/>
-                    <size key="freeformSize" width="414" height="1200"/>
+                    <size key="freeformSize" width="414" height="1400"/>
                     <connections>
-                        <outlet property="cycleInfo" destination="c5k-ih-XZc" id="aR6-Kt-upy"/>
+                        <outlet property="helperr" destination="UEP-zm-rPp" id="M3N-ln-Aiv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4S-u4-Id1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -251,9 +243,6 @@ Luteinizing phase: This stage lasts for approximately 15 to 28 days. The egg lea
         </scene>
     </scenes>
     <resources>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
