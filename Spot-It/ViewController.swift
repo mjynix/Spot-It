@@ -16,5 +16,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    
 
+
+}
+
+class food {
+    var apple = "yum"
 }
