@@ -8,7 +8,11 @@
 import UIKit
 
 class TreatmentsViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var treatHeader: UIImageView!
+    @IBOutlet weak var treatLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -141,7 +141,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg5-Ag-PvI">
                                 <rect key="frame" x="41" y="196" width="332" height="541"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">
+                                <string key="text">
 - Over-the-counter pain medicine like ibuprofen (Advil), naproxen (Aleve), or acetaminophen (Tylenol). Always follow the instructions on the bottle. Talk with your doctor before taking pain medication if you have an allergy to aspirin or severe asthma.
 - Exercise.
 - Put a heating pad on your belly or lower back.
@@ -151,7 +151,7 @@
 - Acupuncture and acupressure.
 - Transcutaneous electric nerve stimulation (TENS) is a therapy that uses mild electric currents to stimulate your nerves to relieve pain.
 - Certain vitamins and herbs like vitamin B1, fish oil, fenugreek, ginger, valerian, zataria, and zinc sulfate.
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -161,6 +161,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="GS3-lw-DSq"/>
+                    <connections>
+                        <outlet property="treatHeader" destination="dQG-Ff-NKW" id="Hrq-Kq-5rC"/>
+                        <outlet property="treatLabel" destination="cg5-Ag-PvI" id="egv-fy-ITV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bBK-Ru-k2r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -181,7 +185,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRq-y7-rxE">
                                 <rect key="frame" x="20" y="188" width="374" height="620"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">See a Doctor If:
+                                <string key="text">See a Doctor If:
 You’re worried that you might be pregnant because you’ve had unprotected sex and missed your period.
 Your period is so heavy that you have to change maxi pads or super tampons every hour.
 Your period lasts much longer than usual, or longer than 7 days.  
@@ -195,7 +199,7 @@ Your periods stop or suddenly become irregular.
 Your period comes more often than every 21 days or less often than every 45 days.
 You get very anxious or depressed around the time you get your period.
 
-</mutableString>
+</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -229,8 +233,8 @@ You get very anxious or depressed around the time you get your period.
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwg-sP-f1a">
                                 <rect key="frame" x="44" y="191" width="326" height="538"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <mutableString key="text">DC Planned Parenthoods: - BRENTWOOD HEALTH CENTER - UPPER CARDOZO HEALTH CENTER  Health care for the Homeless at Unity : https://www.unityhealthcare.org/services/homeless-services 
-Obstetrics and Gynaecology clinics : https://www.unityhealthcare.org/services/homeless-services</mutableString>
+                                <string key="text">DC Planned Parenthoods: - BRENTWOOD HEALTH CENTER - UPPER CARDOZO HEALTH CENTER  Health care for the Homeless at Unity : https://www.unityhealthcare.org/services/homeless-services 
+Obstetrics and Gynaecology clinics : https://www.unityhealthcare.org/services/homeless-services</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
