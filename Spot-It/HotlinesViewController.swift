@@ -9,6 +9,9 @@ import UIKit
 
 class HotlinesViewController: UIViewController {
 
+    @IBOutlet weak var hotlineHeader: UIImageView!
+    @IBOutlet weak var hotlineText: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
