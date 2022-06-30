@@ -9,10 +9,11 @@ import UIKit
 
 class PeriodHelpViewController: UIViewController {
 
+    @IBOutlet weak var periodHeader: UIImageView!
+   
+    @IBOutlet weak var periodColors: UIImageView!
+    @IBOutlet weak var periodGuide: UIImageView!
     
-    
-    @IBOutlet weak var helperr: UILabel!
-
     override func viewDidLoad() {
         super.viewDidLoad()
 

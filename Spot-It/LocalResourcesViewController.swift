@@ -9,6 +9,8 @@ import UIKit
 
 class LocalResourcesViewController: UIViewController {
 
+    @IBOutlet weak var resourceHeader: UIImageView!
+    @IBOutlet weak var resourceText: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 

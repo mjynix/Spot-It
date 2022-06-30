@@ -72,10 +72,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pzt-WZ-xCX">
-                                <rect key="frame" x="162" y="346" width="93" height="31"/>
+                                <rect key="frame" x="126" y="346" width="166" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Symptoms"/>
+                                <buttonConfiguration key="configuration" style="gray" title="When to See a Doctor"/>
                                 <connections>
                                     <segue destination="ve3-7r-A2T" kind="show" id="eT4-Lb-STr"/>
                                 </connections>
@@ -95,7 +95,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Period Help"/>
                                 <connections>
-                                    <segue destination="cKx-Z1-smC" kind="show" id="i6W-G4-miU"/>
+                                    <segue destination="cKx-Z1-smC" kind="show" id="d8t-7l-rZW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K4l-Gb-WGC">
@@ -107,6 +107,15 @@
                                     <segue destination="CEw-PR-r1M" kind="show" id="vIG-5l-V1u"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QUg-F1-fpG">
+                                <rect key="frame" x="163" y="487" width="90" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Treatment"/>
+                                <connections>
+                                    <segue destination="bx7-yN-Egd" kind="show" id="NgX-CQ-AMC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lVs-U2-byd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -115,35 +124,126 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c8I-M1-srB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="35" y="822"/>
+            <point key="canvasLocation" x="34.782608695652179" y="821.65178571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--Treatment View Controller-->
+        <scene sceneID="5ZZ-JH-h7C">
+            <objects>
+                <viewController id="bx7-yN-Egd" customClass="TreatmentViewController" customModule="Spot_It" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hZS-c4-tdX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dQG-Ff-NKW">
+                                <rect key="frame" x="87" y="44" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cg5-Ag-PvI">
+                                <rect key="frame" x="41" y="196" width="332" height="541"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">
+- Over-the-counter pain medicine like ibuprofen (Advil), naproxen (Aleve), or acetaminophen (Tylenol). Always follow the instructions on the bottle. Talk with your doctor before taking pain medication if you have an allergy to aspirin or severe asthma.
+- Exercise.
+- Put a heating pad on your belly or lower back.
+- Take a hot bath.
+- Rest.
+- Hormonal birth control (like the pill, patch, ring, implant, and hormonal IUD).
+- Acupuncture and acupressure.
+- Transcutaneous electric nerve stimulation (TENS) is a therapy that uses mild electric currents to stimulate your nerves to relieve pain.
+- Certain vitamins and herbs like vitamin B1, fish oil, fenugreek, ginger, valerian, zataria, and zinc sulfate.
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5wV-CV-0n1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GS3-lw-DSq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bBK-Ru-k2r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1173.913043478261" y="1583.7053571428571"/>
+        </scene>
+        <!--Symptoms View Controller-->
         <scene sceneID="X4M-IV-nGa">
             <objects>
-                <viewController id="ve3-7r-A2T" sceneMemberID="viewController">
+                <viewController id="ve3-7r-A2T" customClass="SymptomsViewController" customModule="Spot_It" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wik-2d-3DJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f1r-2z-DQ1">
+                                <rect key="frame" x="87" y="31" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRq-y7-rxE">
+                                <rect key="frame" x="20" y="188" width="374" height="620"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">See a Doctor If:
+You’re worried that you might be pregnant because you’ve had unprotected sex and missed your period.
+Your period is so heavy that you have to change maxi pads or super tampons every hour.
+Your period lasts much longer than usual, or longer than 7 days.  
+You're light-headed, dizzy, or your pulse is racing.
+You’re 16 years old and still haven’t gotten your period.
+You have severe pain before or during your period.
+You have unusual bleeding between periods.
+You suddenly feel sick or get a fever when using a tampon.
+Your periods or PMS keep you from your normal day-to-day activities.
+Your periods stop or suddenly become irregular.
+Your period comes more often than every 21 days or less often than every 45 days.
+You get very anxious or depressed around the time you get your period.
+
+</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="hSO-KW-3Mk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ga6-ox-8Qy"/>
+                    <connections>
+                        <outlet property="doctorHeader" destination="f1r-2z-DQ1" id="ctS-K7-c1A"/>
+                        <outlet property="doctorText" destination="TRq-y7-rxE" id="IdQ-tm-54v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gij-bL-2cp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="429" y="1592"/>
+            <point key="canvasLocation" x="428.98550724637687" y="1591.7410714285713"/>
         </scene>
-        <!--View Controller-->
+        <!--Local Resources View Controller-->
         <scene sceneID="UFg-K7-R1J">
             <objects>
-                <viewController id="Ecu-cW-ieT" sceneMemberID="viewController">
+                <viewController id="Ecu-cW-ieT" customClass="LocalResourcesViewController" customModule="Spot_It" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SXZ-u9-ffl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q8g-qn-AhR">
+                                <rect key="frame" x="87" y="44" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="19" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rwg-sP-f1a">
+                                <rect key="frame" x="44" y="191" width="326" height="538"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <mutableString key="text">DC Planned Parenthoods: - BRENTWOOD HEALTH CENTER - UPPER CARDOZO HEALTH CENTER  Health care for the Homeless at Unity : https://www.unityhealthcare.org/services/homeless-services 
+Obstetrics and Gynaecology clinics : https://www.unityhealthcare.org/services/homeless-services</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="PVJ-yq-v1v"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="QNE-i7-rB8"/>
+                    <connections>
+                        <outlet property="resourceHeader" destination="q8g-qn-AhR" id="AcM-uT-bJ0"/>
+                        <outlet property="resourceText" destination="rwg-sP-f1a" id="Bpd-8N-sym"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yve-5W-IGT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -153,56 +253,31 @@
         <scene sceneID="B9b-3a-I8f">
             <objects>
                 <viewController id="cKx-Z1-smC" customClass="PeriodHelpViewController" customModule="Spot_It" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YVD-gU-qQI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1346"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <view key="view" contentMode="scaleToFill" id="t6D-n8-VYC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UNe-s4-oYt">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1356"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vuD-6R-v7O">
+                                <rect key="frame" x="65" y="175" width="284" height="285"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8tX-ye-xjg">
-                                        <rect key="frame" x="0.0" y="-54" width="414" height="1390"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KHp-51-yK9">
-                                                <rect key="frame" x="87" y="62" width="240" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="200" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UEP-zm-rPp">
-                                                <rect key="frame" x="32" y="145" width="351" height="1297"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <mutableString key="text">The sequence of events that take place within your body as it gets ready each month for the potential of pregnancy is known as the menstrual cycle. The first day of a period is regarded as the start of a menstrual cycle. Although a cycle can be anywhere from 21 and 35 days in length, the typical cycle is 28 days long.
-
-The peaks and valleys of hormone-related substances in your body cause the phases of the menstrual cycle. During your menstrual cycle, your ovaries and pituitary gland in your brain produce and release specific hormones at specific intervals that affect how your reproductive tract's organs react.
-
-
-The menses phase: which normally lasts from day one to day five, is when, if pregnancy has not yet taken place, the lining of your uterus is actually shed out via your vagina. Most people bleed for three to five days, however it is still regarded as normal to bleed for as little as two days or as long as seven days.
-
-The follicular phase: Normally, this period lasts from days six to fourteen. The endometrium (the lining of your uterus)  grows and thickens at this time as the hormone oestrogen levels rise. The follicles in your ovaries also expand as a result of another hormone called follicle-stimulating hormone. One of the growing follicles will create a fully developed ovum between days 10 and 14.
-
-Ovulation: In a 28-day menstrual cycle, this phase usually takes place on day 14 or so. Your ovary releases an egg when the level of another hormone, luteinizing hormone, suddenly rises. This process is known as ovulation.
-
-Luteinizing phase: This stage lasts for approximately 15 to 28 days. The egg leaves your ovary and starts its journey through your fallopian tubes to reach your uterus. To aid in preparing your uterine lining for pregnancy, progesterone levels increase. You become pregnant if the egg is fertilised by a sperm and adheres to the uterine wall. In the absence of pregnancy, oestrogen and progesterone levels fall, and your uterus's thicker lining sheds during each menstrual cycle.</mutableString>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                    </view>
-                                </subviews>
-                                <viewLayoutGuide key="contentLayoutGuide" id="KcM-iJ-CVU"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="sUf-EW-OAS"/>
-                            </scrollView>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZJc-hL-Nku">
+                                <rect key="frame" x="65" y="468" width="284" height="363"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yOh-9V-MHa">
+                                <rect key="frame" x="33" y="44" width="349" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="ufh-em-IRm"/>
+                        <viewLayoutGuide key="safeArea" id="J1e-Tj-E1f"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="LrJ-fB-J0t"/>
-                    <size key="freeformSize" width="414" height="1400"/>
                     <connections>
-                        <outlet property="helperr" destination="UEP-zm-rPp" id="M3N-ln-Aiv"/>
+                        <outlet property="periodColors" destination="vuD-6R-v7O" id="oKB-ny-cZj"/>
+                        <outlet property="periodGuide" destination="ZJc-hL-Nku" id="Zjl-XD-NnS"/>
+                        <outlet property="periodHeader" destination="yOh-9V-MHa" id="7SG-4s-9gS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4S-u4-Id1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -216,6 +291,23 @@ Luteinizing phase: This stage lasts for approximately 15 to 28 days. The egg lea
                     <view key="view" contentMode="scaleToFill" id="8z4-ww-47p">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5iL-OX-3Ki">
+                                <rect key="frame" x="87" y="44" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OT4-Lh-JsA">
+                                <rect key="frame" x="46" y="250" width="306" height="532"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">
+Office on Women’s Health Helpline: 1-800-994-9662
+US Emergency Number: 911
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="PPm-0V-Uhh"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -223,7 +315,7 @@ Luteinizing phase: This stage lasts for approximately 15 to 28 days. The egg lea
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zyS-P1-14D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1186" y="1584"/>
+            <point key="canvasLocation" x="1908.6956521739132" y="1583.7053571428571"/>
         </scene>
         <!--Maps View Controller-->
         <scene sceneID="EFO-S7-q81">

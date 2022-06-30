@@ -1,17 +1,14 @@
 //
-//  SymptomsViewController.swift
+//  TreatmentViewController.swift
 //  Spot-It
 //
-//  Created by Jasmine Ma on 6/29/22.
+//  Created by Jasmine Ma on 6/30/22.
 //
 
 import UIKit
 
-class SymptomsViewController: UIViewController {
+class TreatmentViewController: UIViewController {
 
-    @IBOutlet weak var doctorHeader: UIImageView!
-    @IBOutlet weak var doctorText: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
